@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1523293953 source:c:\users\asus\desktop\seba\prueba2paratp1\funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1523295361 source:c:\users\asus\desktop\seba\prueba2paratp1\main.c
+	<stdio.h>
+	<stdlib.h>
+
