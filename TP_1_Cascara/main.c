@@ -6,7 +6,7 @@ int main()
 {
     char seguir='s';
     int opcion=0;
-    float a,b,resultado;
+    float a,b;
 
     while(seguir=='s')
     {
@@ -35,7 +35,6 @@ int main()
             case 3:
             printf("La suma de %.2f y %.2f es: %.2f\n", a, b, suma(a, b));
             system("pause");
-            return 0;
                 break;
             case 4:
             printf("La resta de %.2f y %.2f es: %.2f\n", a, b, resta(a, b));
