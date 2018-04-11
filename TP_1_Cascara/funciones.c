@@ -1,17 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void menu() {
-  printf ("\nIntroduce una de las siguientes opciones:\n");
-  printf ("1.- Sumar\n");
-  printf ("2.- Restar\n");
-  printf ("3.- Multiplicar\n");
-  printf ("4.- Dividir\n");
-  printf ("5.- Factorial\n");
-  printf ("0.- Salir\n");
-  printf ("Opcion: ");
-}
-
+/** \brief
+ *
+ * \param a float
+ * \param b float
+ * \return float
+ *
+ */
 float suma(float a, float b) {
     float suma;
     suma = a + b;
@@ -27,7 +23,15 @@ float resta(float a, float b) {
 float multiplicar(float a, float b) {
     float multiplicacion;
     multiplicacion = a * b;
-    return multiplicacion;
+
+    if(b==0)
+    {
+        printf("Error. No se puede dividir por cero");
+    }
+    else
+    {
+        return multiplicacion;
+    }
 }
 
 float dividir(float a, float b) {
@@ -38,9 +42,18 @@ float dividir(float a, float b) {
 
 float factorial(float a) {
     float resultado;
-    if(a==1){
+    if(a<=0)
+    {
+         printf("Error. No se puede sacar el factorial de un numero negativo");
+    }
+    else if(a>0)
+    {
+        if(a==1){
         return(1);
     }
     resultado=a*factorial(a-1);
     return(resultado);
+    }
+
 }
+

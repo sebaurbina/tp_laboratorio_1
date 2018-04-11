@@ -1,4 +1,3 @@
-void menu(); // Menu de opciones
 float suma(float a, float b); // Funcion sumar dos numeros
 float resta(float a, float b); // Funcion restar dos numeros
 float multiplicar(float a, float b); // Funcion multiplicar dos numeros
