@@ -28,36 +28,70 @@ int main()
             printf("\nIntroduce primer operando: ");
             scanf("%f", &a);
                 break;
+
             case 2:
             printf("\nIntroduce segundo operando: ");
             scanf("%f", &b);
                 break;
+
             case 3:
             printf("La suma de %.2f y %.2f es: %.2f\n", a, b, suma(a, b));
             system("pause");
                 break;
+
             case 4:
             printf("La resta de %.2f y %.2f es: %.2f\n", a, b, resta(a, b));
             system("pause");
                 break;
+
             case 5:
-            printf("La division entre %.2f y %.2f es: %.2f\n", a, b, dividir(a, b));
+                if(b==0){
+                    printf("Error. No se puede dividir por cero\n");
+                }
+                else{
+                    printf("La division entre %.2f y %.2f es: %.2f\n", a, b, dividir(a, b));
+                }
             system("pause");
                 break;
+
             case 6:
             printf("La multiplicacion de %.2f y %.2f es: %.2f\n", a, b, multiplicar(a, b));
             system("pause");
                 break;
+
             case 7:
-            printf("El factorial de %.2f es: %.2f\n", a, factorial(a));
+                if(a<=0)
+                {
+                    printf("Error. No se puede sacar el factorial de un numero negativo o cero\n");
+                }
+                else{
+                    printf("El factorial de %.2f es: %.2f\n", a, factorial(a));
+                }
             system("pause");
                 break;
+
             case 8:
             printf("La suma de %.2f y %.2f es: %.2f\n", a, b, suma(a, b));
+
             printf("La resta de %.2f y %.2f es: %.2f\n", a, b, resta(a, b));
+
             printf("La multiplicacion de %.2f y %.2f es: %.2f\n", a, b, multiplicar(a, b));
-            printf("La division entre %.2f y %.2f es: %.2f\n", a, b, dividir(a, b));
-            printf("El factorial de %.2f es: %.2f\n", a, factorial(a));
+
+            if(b==0){
+                    printf("Error. No se puede dividir por cero\n");
+                }
+                else{
+                    printf("La division entre %.2f y %.2f es: %.2f\n", a, b, dividir(a, b));
+                }
+
+            if(a<=0)
+                {
+                    printf("Error. No se puede sacar el factorial de un numero negativo o cero\n");
+                }
+                else{
+                    printf("El factorial de %.2f es: %.2f\n", a, factorial(a));
+                }
+
             system("pause");
                 break;
             case 9:

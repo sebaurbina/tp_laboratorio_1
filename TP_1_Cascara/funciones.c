@@ -50,16 +50,7 @@ float multiplicar(float a, float b) {
 float dividir(float a, float b) {
     float division;
     division = a / b;
-
-    if(b==0)
-    {
-        printf("Error. No se puede dividir por cero");
-
-    }
-    else
-    {
-        return division;
-    }
+    return division;
 }
 
 /** \brief funcion que recibe una variable, realiza el factorial y devuelve el resultado. Tiene en cuenta posibles errores.
@@ -70,18 +61,11 @@ float dividir(float a, float b) {
  */
 float factorial(float a) {
     float resultado;
-    if(a<=0)
-    {
-         printf("Error. No se puede sacar el factorial de un numero negativo");
-    }
-    else if(a>0)
-    {
+
         if(a==1){
         return(1);
     }
     resultado=a*factorial(a-1);
     return(resultado);
-    }
-
 }
 
