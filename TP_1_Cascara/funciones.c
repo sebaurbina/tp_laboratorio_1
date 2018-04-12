@@ -50,7 +50,6 @@ float multiplicar(float a, float b) {
 float dividir(float a, float b) {
     float division;
     division = a / b;
-    //return division;
 
     if(b==0)
     {
